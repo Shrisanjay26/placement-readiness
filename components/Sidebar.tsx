@@ -80,13 +80,22 @@ export default function Sidebar({ githubOwner, githubRepo }: SidebarProps) {
         </div>
         
         <div className="bg-[#0a0a0a]/80 backdrop-blur-md border border-slate-800/60 rounded-xl p-4 relative z-10">
-          <p className="text-xs font-medium text-slate-400 leading-relaxed mb-4">
-            MCA Department,<br />
-            PSG College of Technology<br />
-            25MX Cohort
-          </p>
-          <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-700/50 flex items-center justify-center text-brand-500 text-xs font-bold">
-            {'</>'}
+          <div className="flex items-start justify-between">
+            <p className="text-xs font-medium text-slate-400 leading-relaxed mb-4">
+              MCA Department,<br />
+              PSG College of Technology<br />
+              25MX Cohort
+            </p>
+            <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-700/50 flex items-center justify-center text-brand-500 text-xs font-bold shrink-0">
+              {'</>'}
+            </div>
+          </div>
+          <div className="mt-2 pt-3 border-t border-slate-800/60">
+            <p className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold mb-1">Developed By</p>
+            <a href="https://tinobritty.me" target="_blank" rel="noopener noreferrer" className="block text-brand-400 hover:text-brand-300 transition-colors font-medium text-sm">
+              Tino Britty J
+            </a>
+            <p className="text-xs text-slate-500 mt-0.5">Placement Representative</p>
           </div>
         </div>
       </div>
